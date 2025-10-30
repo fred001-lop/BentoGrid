@@ -15,6 +15,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     padding: 2rem;
+    margin-top: 3rem;
 }
 
 .bento-grid{
@@ -27,9 +28,9 @@ body{
     grid-auto-rows: 200px;
     
     grid-template-areas: 
-    "item7 item1 item1 item3"
-    "item7 item1 item1 item3"
-    "item8 item2 item4 item3"
+    "item2 item1 item1 item3"
+    "item2 item1 item1 item3"
+    "item8 item7 item4 item3"
     "item8 item6 item5 item5"
     ;
 }
@@ -40,7 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.5); */
 }
 
 .bento-item img{
@@ -79,9 +80,9 @@ body{
 .item--1 p{
     color: hsl(0, 0%, 100%);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 200;
-    margin-bottom: 10px; 
+    margin-bottom: 40px; 
 }
 .resalt{
     color: hsl(39, 100%, 71%);
@@ -91,4 +92,12 @@ h2 span.resalt::after {
   content: "\A"; /* Salto de línea */
   white-space: pre; /* Mantiene el salto */
 text-align: center;
+}
+
+
+/* item 2 */
+
+.item--7{
+    grid-area: item2;
+    background-color:  hsla(31, 66%, 93%, 0.8);
 }
