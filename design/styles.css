@@ -23,14 +23,11 @@ body{
     gap: 1.5rem;
     max-width: 1100px;
     width: 100%;
-
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: 200px;
-    
     grid-template-areas: 
     "item2 item1 item1 item4"
     "item2 item7 item3 item4"
-    "item8 .     .     item4"
     "item8 item6 item5 item5";
 }
 
@@ -54,7 +51,7 @@ body{
 .item--1{
     
     align-self: start;
-    max-height: 320px;
+    max-height: 280px;
     overflow: hidden;
     grid-area: item1;
     background-color: hsl(256, 67%, 59%);
@@ -100,10 +97,17 @@ text-align: center;
 .item--2{
     grid-area: item7;
     background-color: hsl(0, 0%, 100%);
-    align-self: flex-start;
-    margin-top: 7rem;
+    align-self: start;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
-    max-height: 300px;
+    /* grid-row: span 2; */
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center; 
+    max-height: 250px;
+    /* margin-bottom: -10px; */
     
 }
 
@@ -117,6 +121,7 @@ text-align: center;
 .item--7{
     grid-area: item2;
     background-color:  hsla(31, 66%, 93%, 0.8);
+    max-height: 380px;
     
     
 }
@@ -146,7 +151,7 @@ text-align: center;
     overflow: hidden;
     flex-direction: column;
     align-items: center; 
-    max-height: 250px;
+    max-height: 237px;
 }
 
 .item--3 h3{
@@ -173,16 +178,40 @@ text-align: center;
 
 .item--5{
     grid-area: item5;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .item--6{
     grid-area: item6;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5rem;
+    background-color: hsl(0, 0%, 100%);
+    transform: translateY(40px);
+    height: 250px;
 }
 
 .item--8{
-    background-color: hsl(39, 100%, 71%);
     grid-area: item8;
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    align-self: flex-start;
+    max-height: none;
+    transform: translateY(-3rem);
+    height: 420px;
 
 }
 
+.item--8 h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 0.9;
+}
+
+.item--8 img{
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+}
 
